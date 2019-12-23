@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Costa Rica Weather</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center" color = blue>
+      <h1>Visit Mars</h1>
+      <p>Today's News, Facts, Weather, Images</p>
+        <div class="thumbnail">
+          <img src="mission_to_mars.png" alt="mission" class="img-thumbnail">
+        </div>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Get Current Information!</a></p>
+    </div>
+      <h2>Latest Mars News</h2>
+      <h3> {{ mars.Mars_News_Title}}</h3>
+      <h4> {{ mars.Mars_News_Para }}</h4>
+  </div>
+  </div>
+  
+  <div class="row">
+    <div class = "col-md-7">
+      <iframe src='https://mars.nasa.gov/layout/embed/image/insightweather/' width='800' height='530'  scrolling='no' frameborder='0'></iframe>
+    </div>
+    <div class = "col-md-5">
+      <h3> {{ mars.html_table}}</h3>
+    </div>
+  </div>
+</body>
+
+</html>
